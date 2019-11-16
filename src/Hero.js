@@ -4,6 +4,8 @@ import Typing from 'react-typing-animation'
 class Hero extends Component {
 
     render() {
+
+        console.log(this.state)
         return (
             <div className="jumbotron jumbotron-fluid">
                 <div className="container">

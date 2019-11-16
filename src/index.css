@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/IMG_1707.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 code {
@@ -19,4 +24,12 @@ code {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.card {
+  opacity: 1;
+}
+
+.card.img{
+  opacity: 1;
 }

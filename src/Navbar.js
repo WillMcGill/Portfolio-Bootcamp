@@ -3,6 +3,17 @@ import React, { Component } from 'react'
 
 
 class ListPopulate extends Component {
+
+constructor(props){
+    super(props)
+
+    this.changeState = this.changeState.bind(this)
+}
+
+
+    changeState(page){
+        this.props.PageChange(page)
+    }
     render() {
         return (
             this.props.ListItems.map((item, idx) => {
@@ -26,7 +37,7 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <ul className="navbar-nav mr-auto">
-                            <ListPopulate ListItems={this.props.NavbarItems} />
+                            <ListPopulate ListItems={this.props.NavbarItems}ß/>
                         </ul>
                     </ul>
                 </div>
