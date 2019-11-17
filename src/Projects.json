@@ -1,0 +1,29 @@
+{
+    "Puzzle Slider":{
+        "image": "/PuzzleSlider.png",
+        "desc": "A sliding puzzle game created using vanilla Javascript."
+        
+    },
+
+    "Tic Tac Toe":{
+        "image":"/TicTacToe.png",
+        "desc": "A simple Tic Tac Toe game created using vanilla Javascript"
+    },
+
+    "Weather App":{
+        "image":"/Weather.png",
+        "desc": "An app that allows a user to enter a 5 digit zip code and using an API, pull in real time weather data for that location."
+    },
+
+    "Calculator":{
+        "image":"/Calculator.png",
+        "desc": "A simple calculator created with Javascript"
+    },
+
+    "Kevin Malone for Constable":{
+        "image":"/Campaign.png",
+        "desc":"A fiction campaign website for Kevin Malone from the Office.  This is my first site created with Bootstrap."
+    }
+
+    
+}

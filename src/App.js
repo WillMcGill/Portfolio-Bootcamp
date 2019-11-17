@@ -10,6 +10,7 @@ import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Card from './Card'
+import Clock from './ClockDisplay'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
 class App extends React.Component {
@@ -23,9 +24,10 @@ class App extends React.Component {
       { name: "Link", URL: '#', target: '_SELF' },
       { name: <FontAwesomeIcon icon={faHackerrank} />, URL: 'https://www.hackerrank.com/mcgill_will/', target: '_blank' },
       { name: <FontAwesomeIcon icon={faLinkedin} />, URL: 'https://www.linkedin.com/in/will-mcgill/', target: '_blank' },
-      { name: <FontAwesomeIcon icon={faGithub} />, URL: 'https://github.com/WillMcGill', target: '_blank' }];
+      { name: <FontAwesomeIcon icon={faGithub} />, URL: 'https://github.com/WillMcGill', target: '_blank' },
+      <Clock />];
 
-    this.state = { 'page': 2 }
+    this.state = { 'page': 2}
 
     this.getStateFromChild = this.getStateFromChild.bind(this);
   }
@@ -53,8 +55,9 @@ class App extends React.Component {
         <div className="App d-inline">
           <Navbar NavbarItems={this.Navbar_Items} PageChange = {this.getStateFromChild}/>
          
-         
+          <Clock />
           <Card />
+          
           
           
         </div>
