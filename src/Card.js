@@ -3,57 +3,48 @@ import axios from 'axios'
 
 class Card extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props)
-
-        this.state = {data : []}
+        this.state = { data: [] }
 
         this.getData = this.getData.bind(this)
     }
 
-    getData(){
+    getData() {
         axios.get('./Projects.json')
-        .then( res => {
-                this.setState({data : res.data})
-                 
+            .then(res => {
+                this.setState({ data: res.data })
             })
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.getData()
     }
-    
+
     render() {
-       
-       const cards = this.state.data.map((item) =>{
-        return(
-            <div className="card m-4 col-3">
-            <h5 class="card-title">{item.title}</h5>
-                <img src={item.image} className="card-img-top" alt="..." />
-                <div className="card-body">
-                
-                    <p className="card-text">{item.desc}
-                    </p>
+
+        const cards = this.state.data.map((item) => {
+            return (
+                <div className="card m-4 col-3">
+                    <h5 class="card-title">{item.title}</h5>
+                    <img src={item.image} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <p className="card-text">{item.desc}
+                        </p>
+                        <a href={item.url} class="btn btn-primary">Check Me out!</a>
+                    </div>
                 </div>
-            </div>
-        )
-       })
-       
-        console.log(cards)
-       
-
+            )
+        })
         return (
-
             <>
-            <div className="row mx-auto">
-                {cards}
-            </div>    
+                <div className="row mx-auto">
+                    {cards}
+                </div>
             </>
-            
+
         )
-
     }
-
 }
 
 export default Card
