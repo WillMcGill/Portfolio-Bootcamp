@@ -7,7 +7,7 @@ class Navbar extends Component {
         const aTags = this.props.NavbarItems.map((item, idx) => {
             console.log(this.props);
             return (
-                <a key={idx} target={item.target} className="nav-item nav-link" href="#" onClick={() => this.props.pageChange(idx+1)}>{item.name} </a>
+                <a key={idx} target={item.target} className="nav-item nav-link" href={item.URL} onClick={() => this.props.pageChange(idx)}>{item.name} </a>
             )
         })
         return (
@@ -17,10 +17,11 @@ class Navbar extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
-                        <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav mx-auto">
+                        <ul className="navbar-nav mx-auto">
 
                             {this.props.NavbarItems ? aTags : ""}
+                            
                         </ul>
                     </ul>
                 </div>
