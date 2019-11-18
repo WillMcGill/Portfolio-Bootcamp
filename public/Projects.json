@@ -32,7 +32,13 @@
 
     {   "title": "React Restaurant",
         "image": "/Restaurant.png",
-        "desc": "A fictional restaurant site created in React.  This was an excercise in pulling data from an API and setting local storage.",
+        "desc": "A fictional restaurant site created in React.  This was an exercise in pulling data from an API and setting local storage.",
+        "url": "https://willmcgill.github.io/ReactRestaurant/"
+    },
+
+    {   "title": "Laravel Library",
+        "image": "/Library.png",
+        "desc": "My first use of Laravel.  This is a library that will let card holders checkout books and as a librarian you can keep patrons in line.  Register for an account or sign in as a librarian.  UN: admin@admin.com  PW: adminpass",
         "url": "https://willmcgill.github.io/ReactRestaurant/"
     }
 
