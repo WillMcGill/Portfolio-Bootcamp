@@ -1,40 +1,40 @@
-{
-    "Puzzle Slider":{
+[
+    {   "title":"Puzzle Slider",
         "image": "/PuzzleSlider.png",
         "desc": "A sliding puzzle game created using vanilla Javascript.",
         "url": "https://willmcgill.github.io/PuzzleSlider/"
     },
 
-    "Tic Tac Toe":{
+    {   "title": "Tic Tac Toe",
         "image":"/TicTacToe.png",
         "desc": "A simple Tic Tac Toe game created using vanilla Javascript",
         "url":"https://willmcgill.github.io/TicTacToeGame/"
     },
 
-    "Weather App":{
+    {   "title": "Weather App",
         "image":"/Weather.png",
         "desc": "An app that allows a user to enter a 5 digit zip code and using an API, pull in real time weather data for that location.",
         "url":"https://willmcgill.github.io/Weather-App/"
     },
 
-    "Calculator":{
+    {   "title": "Calculator",
         "image":"/Calculator.png",
         "desc": "A simple calculator created with Javascript",
         "url": "https://willmcgill.github.io/Calculator/"
         
     },
 
-    "Kevin Malone for Constable":{
+    {   "title":"Kevin Malone for Constable",
         "image":"/Campaign.png",
         "desc":"A fictional campaign website for Kevin Malone from the Office.  This is my first site created with Bootstrap.",
         "url":"https://willmcgill.github.io/CampaignKevin/"
     },
 
-    "React Restaurant":{
+    {   "title": "React Restaurant",
         "image": "/Restaurant.png",
         "desc": "A fictional restaurant site created in React.  This was an excercise in pulling data from an API and setting local storage.",
         "url": "https://willmcgill.github.io/ReactRestaurant/"
     }
 
     
-}
+]

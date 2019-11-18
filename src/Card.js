@@ -1,9 +1,35 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 class Card extends React.Component {
 
+    constructor(props){
+        super(props)
 
+        this.state = {data : []}
+
+        this.getData = this.getData.bind(this)
+    }
+
+    getData(){
+        axios.get('./Projects.json')
+        .then( res => {
+                this.setState({data : res.data})
+                 console.log('inside function', this.state.data)
+            })
+    }
+
+    componentDidMount(){
+        this.getData()
+    }
+    
     render() {
+
+            // if (this.state.data === []){ 
+            //     this.getData()
+            // }
+            //     console.log('inside render' , this.state.data)
+
         return (
             <div className="row mx-auto">
                 <div className="card m-4 col-3">
