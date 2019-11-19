@@ -39,7 +39,7 @@ class Card extends React.Component {
         })
         return (
             <>
-                <div className="row mx-auto">
+                <div className="row mx-auto justify-content-center">
                     {cards}
                 </div>
             </>

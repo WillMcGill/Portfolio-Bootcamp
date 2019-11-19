@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -11,10 +10,9 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Card from './Card'
 import Clock from './ClockDisplay'
-import Blog from './Blog'
 import Profile from './Profile'
 
-import { ParallaxProvider } from 'react-scroll-parallax'
+import { Parallax, Background } from 'react-parallax';
 
 class App extends React.Component {
 
@@ -41,7 +39,10 @@ class App extends React.Component {
 
 
     return (
-      <ParallaxProvider>
+
+        <>
+      <Parallax bgImage={('./IMG_1707.jpg')}
+          strength={200}>
         <div className="App">
           <Navbar NavbarItems={this.Navbar_Items} pageChange={this.getStateFromChild} />
           
@@ -52,8 +53,13 @@ class App extends React.Component {
           </> 
           : ""}
           { this.state.page == 1 ? <Profile /> : ""}
+          
         </div>
-      </ParallaxProvider>
+        <div style={{ height: '200px' }} />
+        </Parallax>
+
+        </>
+      
     )
   }
 }
