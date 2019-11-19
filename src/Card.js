@@ -1,56 +1,51 @@
 import React, { Component } from 'react'
+import axios from 'axios'
+
 
 class Card extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = { data: [] }
 
-    render() {
-        return (
-            <div className="row mx-auto">
-                <div className="card m-4 col-3">
-                <h5 class="card-title">Puzzle Slider</h5>
-                    <img src="/PuzzleSlider.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                    
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-
-
-
-                <div className="card m-4 col-3">
-                <h5 class="card-title">Tic Tac Toe</h5>
-                    <img src="/TicTacToe.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                    
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-
-
-                <div className="card m-4 col-3">
-                <h5 class="card-title">Weather App</h5>
-                    <img src="/Weather.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                    
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-
-
-                <div className="card m-4 col-3">
-                <h5 class="card-title">Calculator</h5>
-                    <img src="/Calculator.png" className="card-img-top" alt="..." />
-                    <div className="card-body">
-                    
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-        )
-
+        this.getData = this.getData.bind(this)
     }
 
+    getData() {
+        axios.get('./Projects.json')
+            .then(res => {
+                this.setState({ data: res.data })
+            })
+    }
+
+    componentDidMount() {
+        this.getData()
+    }
+
+    render() {
+
+        const cards = this.state.data.map((item) => {
+            return (
+                <div className="card m-4 col-3">
+                    <h5 class="card-title">{item.title}</h5>
+                    <img src={item.image} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <p className="card-text">{item.desc}
+                        </p>
+                        <a href={item.url} class="btn btn-primary" target = "_SELF">Check Me out!</a>
+                    </div>
+                </div>
+            )
+        })
+        return (
+            <>
+                <div className="row mx-auto">
+                    {cards}
+                </div>
+            </>
+
+        )
+    }
 }
 
 export default Card
