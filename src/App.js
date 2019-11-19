@@ -12,6 +12,7 @@ import Hero from './Hero'
 import Card from './Card'
 import Clock from './ClockDisplay'
 import Blog from './Blog'
+import Profile from './Profile'
 
 import { ParallaxProvider } from 'react-scroll-parallax'
 
@@ -22,7 +23,6 @@ class App extends React.Component {
     super(props);
     this.Navbar_Items = [
       { name: "Portfolio", URL: '#', target: '_SELF' },
-      { name: "Blog", URL: '#', target: '_SELF' },
       { name: "Profile", URL: '#', target: '_SELF' },
       { name: <FontAwesomeIcon icon={faHackerrank} />, URL: 'https://www.hackerrank.com/mcgill_will/', target: '_blank' },
       { name: <FontAwesomeIcon icon={faLinkedin} />, URL: 'https://www.linkedin.com/in/will-mcgill/', target: '_blank' },
@@ -51,8 +51,7 @@ class App extends React.Component {
           <Clock /><Card />
           </> 
           : ""}
-          { this.state.page == 1 ? <Blog /> : ""}
-
+          { this.state.page == 1 ? <Profile /> : ""}
         </div>
       </ParallaxProvider>
     )

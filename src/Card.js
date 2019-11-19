@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+
 class Card extends React.Component {
 
     constructor(props) {
@@ -31,7 +32,7 @@ class Card extends React.Component {
                     <div className="card-body">
                         <p className="card-text">{item.desc}
                         </p>
-                        <a href={item.url} class="btn btn-primary">Check Me out!</a>
+                        <a href={item.url} class="btn btn-primary" target = "_SELF">Check Me out!</a>
                     </div>
                 </div>
             )
