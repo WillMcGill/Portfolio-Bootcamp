@@ -41,8 +41,8 @@ class App extends React.Component {
     return (
 
         <>
-      <Parallax bgImage={('./IMG_1707.jpg')}
-          strength={200}>
+      
+          
         <div className="App">
           <Navbar NavbarItems={this.Navbar_Items} pageChange={this.getStateFromChild} />
           
@@ -56,7 +56,7 @@ class App extends React.Component {
           
         </div>
         <div style={{ height: '200px' }} />
-        </Parallax>
+        
 
         </>
       
