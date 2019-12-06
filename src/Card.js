@@ -32,7 +32,7 @@ class Card extends React.Component {
                     <div className="card-body">
                         <p className="card-text">{item.desc}
                         </p>
-                        <a href={item.url} class="btn btn-primary" target = "_SELF">Check Me out!</a>
+                        <a href={item.url} class="btn btn-primary" target = "_blank">Check Me out!</a>
                     </div>
                 </div>
             )

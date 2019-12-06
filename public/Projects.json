@@ -36,10 +36,10 @@
         "url": "https://willmcgill.github.io/ReactRestaurant/"
     },
 
-    {   "title": "Laravel Library",
-        "image": "/Library.png",
-        "desc": "My first use of Laravel.  This is a library that will let card holders checkout books and as a librarian you can keep patrons in line.  Register for an account or sign in as a librarian.  UN: admin@admin.com  PW: adminpass",
-        "url": "https://willmcgill.github.io/ReactRestaurant/"
+    {   "title": "Sloper",
+        "image": "/Sloper.png",
+        "desc": "My Final Project for the Awesome Inc Bootcamp. This app uses Laravel and React to create an indoor climbing route management system.  Register and play around, or sign in as admin@admin.com with password admin to change the routes.",
+        "url": "https://sloper.firebaseapp.com/"
     }
 
     

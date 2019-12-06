@@ -41,8 +41,6 @@ class App extends React.Component {
     return (
 
         <>
-      
-          
         <div className="App">
           <Navbar NavbarItems={this.Navbar_Items} pageChange={this.getStateFromChild} />
           
@@ -55,9 +53,6 @@ class App extends React.Component {
           { this.state.page == 1 ? <Profile /> : ""}
           
         </div>
-        <div style={{ height: '200px' }} />
-        
-
         </>
       
     )
