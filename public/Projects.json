@@ -1,0 +1,46 @@
+[
+    {   "title":"Puzzle Slider",
+        "image": "/PuzzleSlider.png",
+        "desc": "A sliding puzzle game created using vanilla Javascript.",
+        "url": "https://willmcgill.github.io/PuzzleSlider/"
+    },
+
+    {   "title": "Tic Tac Toe",
+        "image":"/TicTacToe.png",
+        "desc": "A simple Tic Tac Toe game created using vanilla Javascript",
+        "url":"https://willmcgill.github.io/TicTacToeGame/"
+    },
+
+    {   "title": "Weather App",
+        "image":"/Weather.png",
+        "desc": "An app that allows a user to enter a 5 digit zip code and using an API, pull in real time weather data for that location.",
+        "url":"https://willmcgill.github.io/Weather-App/"
+    },
+
+    {   "title": "Calculator",
+        "image":"/Calculator.png",
+        "desc": "A simple calculator created with Javascript",
+        "url": "https://willmcgill.github.io/Calculator/"
+        
+    },
+
+    {   "title":"Kevin Malone for Constable",
+        "image":"/Campaign.png",
+        "desc":"A fictional campaign website for Kevin Malone from the Office.  This is my first site created with Bootstrap.",
+        "url":"https://willmcgill.github.io/CampaignKevin/"
+    },
+
+    {   "title": "React Restaurant",
+        "image": "/Restaurant.png",
+        "desc": "A fictional restaurant site created in React.  This was an exercise in pulling data from an API and setting local storage.",
+        "url": "https://willmcgill.github.io/ReactRestaurant/"
+    },
+
+    {   "title": "Sloper",
+        "image": "/Sloper.png",
+        "desc": "My Final Project for the Awesome Inc Bootcamp. This app uses Laravel and React to create an indoor climbing route management system.  Register and play around, or sign in as admin@admin.com with password admin to change the routes.",
+        "url": "https://sloper.firebaseapp.com/"
+    }
+
+    
+]
