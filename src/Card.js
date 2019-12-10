@@ -26,7 +26,9 @@ class Card extends React.Component {
 
         const cards = this.state.data.map((item) => {
             return (
-                <div className="card m-4 col-3">
+                
+
+                <div className="card m-4 col-md-3">
                     <h5 class="card-title">{item.title}</h5>
                     <img src={item.image} className="card-img-top" alt="..." />
                     <div className="card-body">

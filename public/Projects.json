@@ -1,4 +1,10 @@
 [
+    {   "title": "Sloper",
+        "image": "/Sloper.png",
+        "desc": "My Final Project for the Awesome Inc Bootcamp. This app uses Laravel and React to create an indoor climbing route management system.  Register and play around, or sign in as admin@admin.com with password admin to change the routes.",
+        "url": "https://sloper.firebaseapp.com/"
+    },
+
     {   "title":"Puzzle Slider",
         "image": "/PuzzleSlider.png",
         "desc": "A sliding puzzle game created using vanilla Javascript.",
@@ -34,13 +40,9 @@
         "image": "/Restaurant.png",
         "desc": "A fictional restaurant site created in React.  This was an exercise in pulling data from an API and setting local storage.",
         "url": "https://willmcgill.github.io/ReactRestaurant/"
-    },
-
-    {   "title": "Sloper",
-        "image": "/Sloper.png",
-        "desc": "My Final Project for the Awesome Inc Bootcamp. This app uses Laravel and React to create an indoor climbing route management system.  Register and play around, or sign in as admin@admin.com with password admin to change the routes.",
-        "url": "https://sloper.firebaseapp.com/"
     }
+
+ 
 
     
 ]
