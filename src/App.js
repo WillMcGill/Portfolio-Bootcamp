@@ -50,7 +50,7 @@ class App extends React.Component {
           <Clock /><Card />
           </> 
           : ""}
-          { this.state.page == 1 ? <Profile /> : ""}
+          { this.state.page >= 1 && this.state.page < 5 ? <Profile /> : ""}
           
         </div>
         </>
