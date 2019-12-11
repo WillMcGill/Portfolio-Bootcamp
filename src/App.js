@@ -12,7 +12,6 @@ import Card from './Card'
 import Clock from './ClockDisplay'
 import Profile from './Profile'
 
-import { Parallax, Background } from 'react-parallax';
 
 class App extends React.Component {
 

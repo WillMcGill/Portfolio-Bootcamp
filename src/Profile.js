@@ -1,6 +1,11 @@
-import React from 'react'
+import React from 'react';
+import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
 class Profile extends React.Component{
+
+  
 
     render(){
 
@@ -9,7 +14,7 @@ class Profile extends React.Component{
         return(
             <>
             
-            <img src="/Will.jpg" className="rounded-circle mt-4" alt="Cinque Terre" width="304" height="236" /> 
+            <img src="/Will.jpg" id = "profile-image" className="rounded-circle mt-4" alt="Cinque Terre" width="304" height="236" /> 
         
             <div class="card mt-3">
   <div class="card-body">
