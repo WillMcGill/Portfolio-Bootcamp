@@ -3,14 +3,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHackerrank } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faHackerrank, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Card from './Card'
 import Clock from './ClockDisplay'
 import Profile from './Profile'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab, faHtml5)
 
 
 class App extends React.Component {

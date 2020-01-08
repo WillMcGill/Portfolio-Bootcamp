@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/js/bootstrap.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 class Profile extends React.Component{
 
@@ -9,13 +11,14 @@ class Profile extends React.Component{
 
     render(){
 
-        
-
         return(
             <>
             
             <img src="/Will.jpg" id = "profile-image" className="rounded-circle mt-4" alt="Cinque Terre" width="304" height="236" /> 
         
+
+            <FontAwesomeIcon icon="fa-html5" />
+
             <div class="card mt-3">
   <div class="card-body">
     Hello all!<p/>
