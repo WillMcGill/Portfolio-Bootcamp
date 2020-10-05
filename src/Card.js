@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Game from './TTT'
 
 
 class Card extends React.Component {
@@ -27,7 +28,7 @@ class Card extends React.Component {
         const cards = this.state.data.map((item) => {
             return (
                 
-
+                
                 <div className="card m-4 col-md-3">
                     <h5 class="card-title">{item.title}</h5>
                     <img src={item.image} className="card-img-top" alt="..." />
@@ -43,6 +44,7 @@ class Card extends React.Component {
             <>
                 <div className="row mx-auto justify-content-center">
                     {cards}
+                    <Game />
                 </div>
             </>
 

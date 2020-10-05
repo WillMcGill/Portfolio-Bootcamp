@@ -8,6 +8,7 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Card from './Card'
 import Clock from './ClockDisplay'
+import Game from './TTT'
 import Profile from './Profile'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -49,6 +50,7 @@ class App extends React.Component {
           { this.state.page == 0 ? 
           <>
           <Clock /><Card />
+           
           </> 
           : ""}
           { this.state.page >= 1 && this.state.page < 5 ? <Profile /> : ""}

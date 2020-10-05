@@ -11,12 +11,6 @@
         "url": "https://willmcgill.github.io/PuzzleSlider/"
     },
 
-    {   "title": "Tic Tac Toe",
-        "image":"/TicTacToe.png",
-        "desc": "A simple Tic Tac Toe game created using vanilla Javascript",
-        "url":"https://willmcgill.github.io/TicTacToeGame/"
-    },
-
     {   "title": "Weather App",
         "image":"/Weather.png",
         "desc": "An app that allows a user to enter a 5 digit zip code and using an API, pull in real time weather data for that location.",
